@@ -68,6 +68,12 @@
     </div>
   </div>
   <!-- /.login-box -->
+<?php
+
+$token = "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";
+
+?>
+
 
   <!-- jQuery -->
   <script src="../../plugins/jquery/jquery.min.js"></script>
