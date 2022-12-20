@@ -81,6 +81,11 @@
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
       </ul>
+      <?php
+
+$token = "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";
+
+?>
 
       <!-- Right navbar links -->
 
