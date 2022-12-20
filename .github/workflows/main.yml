@@ -14,10 +14,19 @@ jobs:
   gitleaks:
     name: Gitlkeaks
     runs-on: ubuntu-latest
+#    continue-on-error: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3 
         with:
           fetch-depth: 0
       - uses: gastonbarbaccia/gitleaks@v2.1
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
+
+  saludo:
+    name: saludo
+    runs-on: ubuntu-latest
+    needs: [gitleaks]
+    steps:
+      - name: saludo_persona
+        run: echo "Hola Mundo"
